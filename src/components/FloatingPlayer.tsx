@@ -23,7 +23,7 @@ export default function FloatingPlayer() {
     <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
       <div
         data-floating-player
-        className="flex items-center gap-3 px-4 py-2.5 rounded-full backdrop-blur-md transition-all duration-700 cursor-pointer origin-center max-[650px]:scale-95 max-[650px]:gap-2.5 max-[650px]:px-3.5 max-[650px]:py-2"
+        className="flex items-center gap-3 px-4 py-2.5 rounded-full backdrop-blur-md transition-all duration-700 cursor-pointer origin-center max-[650px]:scale-90 max-[650px]:gap-2 max-[650px]:px-3 max-[650px]:py-1.5"
         style={{
           backgroundColor: `${theme.bgSecondary}dd`,
           border: `1px solid ${theme.border}`,
@@ -81,7 +81,7 @@ export default function FloatingPlayer() {
             onChange={seek}
             trackColor={`${theme.border}80`}
             fillColor={theme.accent}
-            className="w-20 sm:w-32"
+            className="w-16 sm:w-32"
           />
         </div>
 
@@ -154,7 +154,7 @@ export default function FloatingPlayer() {
             onChange={setVolume}
             trackColor={`${theme.border}80`}
             fillColor={theme.accent}
-            className="w-12"
+            className="w-10"
           />
         </div>
       </div>
