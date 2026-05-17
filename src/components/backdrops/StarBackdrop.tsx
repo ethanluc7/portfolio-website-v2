@@ -444,9 +444,9 @@ export default function StarBackdrop() {
         {/* Warm glow at building base (foreground layer) */}
         <rect
           x="20"
-          y="520"
+          y="560"
           width="160"
-          height="80"
+          height="40"
           fill="rgba(245,214,187,0.09)"
         />
       </svg>
