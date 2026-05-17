@@ -1,6 +1,6 @@
-# ethan luc — portfolio
+# ethan luc
 
-A personal portfolio website with a music-driven theme system. The site's color palette, background visuals, and atmosphere are dependant on the lofi song playing. 
+A portfolio website with a music-driven theme system. The site's color palette, background visuals, and atmosphere are dependant on the lofi song playing. 
 
 ## Tech Stack
 
