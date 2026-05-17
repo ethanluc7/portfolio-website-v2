@@ -24,7 +24,7 @@ function ThemedLayout() {
       <OceanBackdrop />
       <MountainBackdrop />
       <PetalBackdrop />
-      <div className="relative z-10 mx-auto max-w-xl px-6 py-16 pb-28 sm:py-24 sm:pb-32">
+      <div className="relative z-10 mx-auto max-w-xl px-6 pt-10 pb-18 sm:pt-12 sm:pb-16">
         <Outlet />
       </div>
       <FloatingPlayer />
