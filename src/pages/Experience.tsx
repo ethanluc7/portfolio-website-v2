@@ -43,7 +43,7 @@ function Entry({
         {href ? (
           <a
             href={href}
-            className="hover:underline underline-offset-2 transition-colors duration-700"
+            className="hover:underline underline-offset-2 transition-colors duration-300"
             style={{ color: theme.text }}
             target="_blank"
             rel="noopener noreferrer"
@@ -51,7 +51,12 @@ function Entry({
             {title}
           </a>
         ) : (
-          <span>{title}</span>
+          <span
+            className="transition-colors duration-300"
+            style={{ color: theme.text }}
+          >
+            {title}
+          </span>
         )}
         <p
           className="text-sm transition-colors duration-700"

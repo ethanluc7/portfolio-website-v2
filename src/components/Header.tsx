@@ -15,7 +15,8 @@ export default function Header() {
         <div>
           <Link
             to="/"
-            className="text-lg font-medium tracking-tight hover:opacity-70 transition-opacity"
+            className="text-lg font-medium tracking-tight hover:opacity-70 transition-[color,opacity] duration-300"
+            style={{ color: theme.text }}
           >
             ethan luc
           </Link>

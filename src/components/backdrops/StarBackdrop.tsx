@@ -139,7 +139,6 @@ export default function StarBackdrop() {
         {sparkles.map((s, i) => (
           <g
             key={`sparkle-${i}`}
-            transform={`translate(${s.x}%, ${s.y}%)`}
             opacity={s.opacity}
             className="animate-twinkle"
             style={{ animationDelay: `${i * 0.7 + 0.2}s` }}

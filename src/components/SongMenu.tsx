@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { songs } from "../data/songs";
 import { useTheme } from "../context/ThemeContext";
 import AudioPlayer from "./AudioPlayer";
@@ -36,6 +36,15 @@ export function SongDropdown() {
   const { menuOpen, setMenuOpen, activeSong, setActiveSong, theme } =
     useTheme();
   const ref = useRef<HTMLDivElement>(null);
+  const [hasPlayedInitialOpen, setHasPlayedInitialOpen] = useState(false);
+
+  useEffect(() => {
+    const frameId = requestAnimationFrame(() => {
+      setHasPlayedInitialOpen(true);
+    });
+
+    return () => cancelAnimationFrame(frameId);
+  }, []);
 
   useEffect(() => {
     function handleClick(e: MouseEvent) {
@@ -56,14 +65,16 @@ export function SongDropdown() {
     }
   }, [menuOpen, setMenuOpen]);
 
+  const isVisible = menuOpen && hasPlayedInitialOpen;
+
   return (
     <div
       ref={ref}
-      className="overflow-hidden transition-all duration-500 ease-in-out"
+      className="overflow-hidden transition-all duration-500 ease-in-out will-change-[max-height,opacity,margin-top]"
       style={{
-        maxHeight: menuOpen ? "300px" : "0",
-        opacity: menuOpen ? 1 : 0,
-        marginTop: menuOpen ? "20px" : "0",
+        maxHeight: isVisible ? "300px" : "0",
+        opacity: isVisible ? 1 : 0,
+        marginTop: isVisible ? "20px" : "0",
       }}
     >
       <div
