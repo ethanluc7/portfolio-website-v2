@@ -93,12 +93,12 @@ export default function Experience() {
       {/* Work */}
       <Section title="work" id="work">
         <Entry
-          title="Ontario Institute for Cancer Research"
+          title="ontario institute for cancer research"
           sub="software engineer intern &middot; jan 2026 - apr 2026"
         />
         <Entry
-          title="Inductive Solution Inc"
-          sub="software engineer intern &middot; may 2025 - apr 2026"
+          title="inductive solution"
+          sub="software engineer intern &middot; may 2025 - dec 2025"
         />
       </Section>
 
