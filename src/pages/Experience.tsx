@@ -143,7 +143,7 @@ export default function Experience() {
       {/* Education */}
       <Section title="education">
         <Entry
-          title="University of Waterloo"
+          title="university of waterloo"
           sub="bachelor of mathematics &middot; 2024 - 2029"
         />
       </Section>
